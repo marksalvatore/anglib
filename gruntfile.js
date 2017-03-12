@@ -1,38 +1,38 @@
 module.exports = function(grunt) {
   grunt.initConfig({
 
-		compass: {
-			dist: {
-				options: {
-					sassDir: 'sass',
-					cssDir: 'css',
-				}
-			},
-		},
+		sass: {                              
+	   dist: {                            
+	     options: {            
+	       style: 'expanded'
+	     },
+	     files: {           
+	     	'components/accordion/style.css': 'components/accordion/sass.scss',
+	     	'components/loginform/style.css': 'components/loginform/sass.scss'
+	     }
+	   }
+	 },
 
-    cssmin: {
-      build: {
-        src: 'css/style.css',
-        dest: 'style.css'
-      }
-    },
-
-		 uglify: {
-		   my_target: {
-		     files: {
-		       'js/nerra-min.js': ['scripts/nerra.js'],
-		       'js/mapbox-projects-min.js' : 'scripts/mapbox-projects.js',
-		       'js/mapbox-reserves-min.js' : 'scripts/mapbox-reserves.js'
-		     }
-		   }
-		 },
+	 postcss: {
+	   options: {
+	     map: true,
+	     processors: [
+		     //require('pixrem')(), // add fallbacks for rem units
+		     require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+		     //require('cssnano')() // minify the result
+	     ]
+	   },
+	   dist: {
+	     src: ['components/accordion/style.css', 'components/loginform/style.css']
+	   }
+	 },
 
     watch: {
        sass: {
         files: [
-          'sass/**/*.scss'
+          '**/sass.scss'
         ],
-        tasks: ['compass', 'cssmin']
+        tasks: ['sass', 'postcss']
       },
     }
 
@@ -40,12 +40,11 @@ module.exports = function(grunt) {
 
 
   // run tasks
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['compass', 'cssmin', 'uglify']);
+  grunt.registerTask('default', ['sass', 'postcss', 'watch']);
 
 
 }; //wrapper function

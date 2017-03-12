@@ -1,0 +1,64 @@
+/* HORIZONTAL */
+.accordion,  .accrdn {
+	display: flex;
+}
+.accordion {
+	width: 75vw;
+	font-size: 3vw;
+	.accrdn {
+		background: white;
+	}
+}
+.accordion 
+.accordion .title {
+	border: 1px solid black;
+	border-right: none;
+	text-align: center;
+	padding: .5em;
+}
+.accordion .text {
+	display: none;
+}
+.accordion .accrdn.active {
+	background: black;
+	color: white;
+}
+
+/* VERTICAL */
+.accordion.vertical .title {
+	border: 1px solid black;
+	border-bottom: none;
+	text-align: center;
+	padding: .5em;
+}
+.accordion.vertical .accrdn.active {
+	background: black;
+	color: white;
+	width: 5em;
+}
+.accordion .accrdn.active .text {
+	display: block;
+	color: black;
+	background-color: gray;
+	border-left: 1px dashed white;
+	font-size: .4em;
+	padding: .5em;
+}
+
+.accordion.vertical {
+	flex-direction: column;
+	width: 70px;
+}
+
+.accordion.vertical .title {
+	padding: .5em;
+	width: 2.8em;
+	text-align: center;
+}
+
+.accordion div:last-of-type .title {
+	border-right: 1px solid black;
+}
+.accordion.vertical div:last-of-type .title {
+	border-bottom: 1px solid black;
+}

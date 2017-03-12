@@ -5,8 +5,9 @@
   padding: 20px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: inset 1px 1px 0 0 rgba(255,255,255,0.2), inset -1px -1px 0 0 rgba(0,0,0,0.2);
+  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.2), inset -1px -1px 0 0 rgba(0, 0, 0, 0.2);
 }
+
 .signin .avatar {
   width: 100px;
   height: 100px;
@@ -15,6 +16,7 @@
   border-radius: 50%;
   pointer-events: none;
 }
+
 .signin .avatar:before {
   content: "\f272";
   text-align: center;
@@ -23,19 +25,23 @@
   line-height: 100px;
   font-size: 5em;
 }
+
 .signin .inputrow {
   position: relative;
 }
+
 .signin .inputrow label {
   position: absolute;
   top: 12px;
   left: 10px;
 }
+
 .signin .inputrow label:before {
   color: #538a9a;
   opacity: 0.4;
   transition: opacity 300ms 0 ease;
 }
+
 .signin input[type="text"],
 .signin input[type="password"] {
   padding: 1em;
@@ -49,10 +55,12 @@
   border-radius: 5px;
   box-sizing: border-box;
 }
+
 .signin input[type="text"]:focus + label:before,
 .signin input[type="password"]:focus + label:before {
   opacity: 1;
 }
+
 .signin input[type="submit"] {
   height: 40px;
   padding: 1em;
@@ -66,15 +74,19 @@
   outline: none;
   border-radius: 5px;
 }
+
 .signin input[type="submit"]:hover {
   background-color: #aaa;
 }
+
 .signin input[type="submit"]:active {
   background-color: #ccc;
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 input[type="checkbox"] + label {
   position: relative;
   padding-left: 36px;
@@ -83,8 +95,12 @@ input[type="checkbox"] + label {
   line-height: 16px;
   opacity: 0.8;
   text-transform: uppercase;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
+
 input[type="checkbox"] + label:before,
 input[type="checkbox"] + label:after {
   content: "";
@@ -93,13 +109,15 @@ input[type="checkbox"] + label:after {
   height: 16px;
   border-radius: 30px;
 }
+
 input[type="checkbox"] + label:before {
   left: 0;
   top: -2px;
   width: 30px;
-  background: rgba(0,0,0,0.3);
-  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
+
 input[type="checkbox"] + label:after {
   opacity: 0.3;
   background: #fff;
@@ -109,21 +127,28 @@ input[type="checkbox"] + label:after {
   width: 12px;
   transition: all 200ms 0 ease;
 }
+
 input[type="checkbox"]:checked + label {
   opacity: 1;
 }
+
 input[type="checkbox"]:checked + label:after {
   opacity: 1;
   left: 16px;
 }
+
 .cf:before,
 .cf:after {
   content: " ";
   display: table;
 }
+
 .cf:after {
   clear: both;
 }
+
 .cf {
   *zoom: 1;
 }
+
+/*# sourceMappingURL=style.css.map */

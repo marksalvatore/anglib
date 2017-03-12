@@ -1,0 +1,26 @@
+{
+  "name": "angularlib",
+  "version": "1.0.0",
+  "description": "An AngularJS component library",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marksalvatore/anglib.git"
+  },
+  "author": "Mark Salvatore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marksalvatore/anglib/issues"
+  },
+  "homepage": "https://github.com/marksalvatore/anglib#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  }
+}
