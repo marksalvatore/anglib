@@ -4,12 +4,6 @@
 /********************************************
 * Bullet-proof the viewport
 ********************************************/
-@-webkit-viewport {
-  width: device-width;
-}
-@-moz-viewport {
-  width: device-width;
-}
 @-ms-viewport {
   width: device-width;
 }
@@ -154,5 +148,3 @@ a:hover.readme {
   box-shadow: inset 5px 0 0 goldenrod, inset 6px 0 0 #222;
   background: #444;
 }
-
-/*# sourceMappingURL=style.css.map */
