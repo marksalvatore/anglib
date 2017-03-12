@@ -7,6 +7,7 @@ module.exports = function(grunt) {
 	       style: 'expanded'
 	     },
 	     files: {           
+	     	'style.css': 'sass.scss',
 	     	'components/accordion/style.css': 'components/accordion/sass.scss',
 	     	'components/loginform/style.css': 'components/loginform/sass.scss'
 	     }
@@ -23,7 +24,7 @@ module.exports = function(grunt) {
 	     ]
 	   },
 	   dist: {
-	     src: ['components/accordion/style.css', 'components/loginform/style.css']
+	     src: ['style.css', 'components/accordion/style.css', 'components/loginform/style.css']
 	   }
 	 },
 

@@ -1,0 +1,164 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Syncopate:400,700");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css");
+/********************************************
+* Bullet-proof the viewport
+********************************************/
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+/********************************************
+* Base styles
+********************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  	/* Set font size to 62.5% so rems are in base 10. Rems are not relative to their parent, so 1.6rem will always yield 16pixels, etc. Keeping fonts and margin/padding widths in rems (and/or percentages) provides flexibility while maintaining proportionality.
+  
+  		- Use rem for fonts margin/padding
+  		- Use percentages for height/width
+  		- Avoid px, pt
+  		- Use px only for media queries
+  
+  	px/rem conversion is base 10:
+  
+  		12px == 1.2rem
+  		24px == 2.4rem
+  		etc...
+  
+  		The only exception to this is with rem/em in media queries. A rem or em will equal 16px regardless of font-size setting. Standard practice uses pixels.
+  	*/
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 1em/1.2 'Lato', sans-serif;
+  color: #333;
+  background: #333;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 1em 0 1em;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #999;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+}
+
+.sidebar {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.content {
+  -ms-flex: 5;
+      flex: 5;
+  padding: 3em;
+  background: #eee;
+  box-shadow: 0 0 5px black;
+}
+
+.content p {
+  font-size: 1.5em;
+  width: 65%;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:before {
+  content: '\f0c9';
+  font: 42px fontawesome;
+}
+
+a.readme {
+  display: inline-block;
+  color: goldenrod;
+  margin: 0;
+  margin-bottom: 2em;
+  text-decoration: none;
+}
+
+a:hover.readme {
+  color: #ccc;
+}
+
+/* Sidebar */
+.title a {
+  display: block;
+  font-size: 1.6em;
+  line-height: 5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #eee;
+  border-bottom: 1px solid #222;
+  background: #2a2a2a;
+}
+
+.title a:first-of-type {
+  line-height: 3em;
+  padding: 0 1em;
+}
+
+.nav li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 1em 0 1em 2.5em;
+  font-size: 1.5em;
+  color: #eee;
+  border-bottom: 1px solid #222;
+}
+
+.nav li a:before {
+  font: 1em fontawesome;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  content: '\f009';
+}
+
+.nav li a:hover {
+  background: #444;
+}
+
+.nav li a.active {
+  box-shadow: inset 5px 0 0 goldenrod, inset 6px 0 0 #222;
+  background: #444;
+}
+
+/*# sourceMappingURL=style.css.map */
