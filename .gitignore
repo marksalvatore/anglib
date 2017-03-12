@@ -1,0 +1,17 @@
+# ---------------------------------------
+# Ignore all dot files, except .gitignore
+# ---------------------------------------
+\.*
+!.gitignore
+
+
+# ------------
+# Ignore files
+# ------------
+!_*
+__*
+*sublime*
+* copy.php
+*.log
+*.zip
+

@@ -1,0 +1,6 @@
+<div  class="accordion" ng-class="{ 'vertical' : orientation != 'h' }">
+	<div class="accrdn" ng-click="setSelected(accrdn)" ng-class="{ 'active' : isSelected(accrdn) }" ng-repeat="accrdn in ::accordion">
+		<div class="title" ng-bind-html="::accrdn.title"></div>
+		<div class="text" ng-bind-html="::accrdn.text" ng-class="{ active : isSelected(accrdn) }" ></div>
+	</div>
+</div>

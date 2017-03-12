@@ -1,0 +1,36 @@
+{
+	"accordion" : [
+		{
+			"title" : "V",
+			"text" : "Ipsum primis in faucibus."
+		},
+		{
+			"title" : "E",
+			"text" : "Pellentesque ut consequat quam metus.,"
+		},
+		{
+			"title" : "R",
+			"text" : "Sed est ipsum, tincidunt sit."
+		},
+		{
+			"title" : "T",
+			"text" : "Ulla commodo tellus quis."
+		},
+		{
+			"title" : "I",
+			"text" : "Mauris porttitor, lacus vitae."
+		},
+		{
+			"title" : "C",
+			"text" : "Molestie non, porttitor vel sem."
+		},
+		{
+			"title" : "A",
+			"text" : "Molestie non, porttitor vel sem."
+		},
+		{
+			"title" : "L",
+			"text" : "Molestie non, porttitor vel sem."
+		}
+	]
+}

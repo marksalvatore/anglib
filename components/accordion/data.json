@@ -1,0 +1,44 @@
+{
+	"accordion" : [
+		{
+			"title" : "H",
+			"text" : "Lorem ipsum dolor sit amet."
+		},
+		{
+			"title" : "O",
+			"text" : "Odio interdum et malesuada fames."
+		},
+		{
+			"title" : "R",
+			"text" : "Rulvinar et gravida sit ame."
+		},
+		{
+			"title" : "I",
+			"text" : "Et pellentesque fringilla."
+		},
+		{
+			"title" : "Z",
+			"text" : "Molestie non, porttitor vel sem."
+		},
+		{
+			"title" : "O",
+			"text" : "Molestie non, porttitor vel sem."
+		},
+		{
+			"title" : "N",
+			"text" : "Molestie non, porttitor vel sem."
+		},
+		{
+			"title" : "T",
+			"text" : "Molestie non, porttitor vel sem."
+		},
+		{
+			"title" : "A",
+			"text" : "Molestie non, porttitor vel sem."
+		},
+		{
+			"title" : "L",
+			"text" : "Molestie non, porttitor vel sem."
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"loginform" : 
+		{
+			"username" : "Enter username or email address",
+			"password" : "password",
+			"forgot" : "Forget your password?"
+		}
+}

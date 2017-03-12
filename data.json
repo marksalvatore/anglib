@@ -1,0 +1,30 @@
+{
+	"pages" : [
+		{
+			"pageId" : "0",
+			"title": "An AngularJS Components Library",
+			"text": "This project is a collection of common features, user-interactions I find myself building over and over. This particular approach uses the custom element directive in the AngularJS framework to code interactions into reusable components. The approach groups the parts of each interaction&mdash;html/css/js and data&mdash;into its own directory. To use a component, simply copy the component's directory into your project, and then paste the html element for that component into your template. The component would rarely, if ever look and behave exactly as you need it, but at least the basic structure and behavior would be in place, ready for you to evolve the feature into what you want."
+		},
+		{
+			"pageId" : "13",
+			"title": "Horizontal Accordion",
+			"text": "<a class='readme' href='https://github.com/marksalvatore/anglib/tree/master/components/accordion'>Code & ReadMe</a>"
+		},
+		{
+			"pageId" : "24",
+			"title": "Vertical Accordion",
+			"text": "<a class='readme' href='https://github.com/marksalvatore/anglib/tree/master/components/accordion'>Code & ReadMe</a>"
+		},
+		{
+			"pageId" : "35",
+			"title": "Login Form",
+			"text": "<a class='readme' href='https://github.com/marksalvatore/anglib/tree/master/components/loginform'>Code & ReadMe</a>"
+		},
+		{
+			"pageId" : "46",
+			"title": "Component 4",
+			"text": ""
+		}
+	]
+ }
+

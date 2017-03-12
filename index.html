@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset='UTF-8' content=''>
+	<title>An AngularJS Component Library</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body data-ng-controller="MainCtrl as vm">
+
+<div class="wrapper">
+  <div class="sidebar">
+		<div class='title'>
+		  <a href="#/p0" ng-click="vm.displayContent(0)">Components</a>
+		</div>
+		<ul class="nav">
+			<li ng-show="$index != 0" ng-repeat="pg in vm.pages">
+				<a ng-class="{ 'active' : pg.pageId === vm.currPageId }" href="#/p{{ pg.pageId }}" ng-click="vm.displayContent($index)" ng-bind-html="pg.title"></a>
+			</li>
+		</ul>
+  </div>
+
+	<div class='content'>
+		<div ng-view=""></div>
+	</div>
+
+</div>
+
+
+<!-- <script src="//code.jquery.com/jquery-3.1.1.min.js"></script> -->
+<script src="//code.angularjs.org/1.5.9/angular.min.js"></script>
+<script src="//code.angularjs.org/1.5.9/angular-route.min.js"></script>
+<script src="js/angular-css.min.js"></script>
+
+<!-- To use html within json -->
+<script src="//code.angularjs.org/1.5.9/angular-sanitize.min.js"></script>
+<script src="app.js"></script>
+<!-- Component scripts -->
+<script src="components/accordion/script.js"></script>
+<script src="components/loginform/script.js"></script>
+
+</body>
+</html>
+
