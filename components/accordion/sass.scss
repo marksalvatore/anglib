@@ -1,15 +1,14 @@
 /* HORIZONTAL */
-.accordion,  .accrdn {
-	display: flex;
-}
 .accordion {
 	width: 75vw;
 	font-size: 3vw;
-	.accrdn {
-		background: white;
-	}
 }
-.accordion 
+.accordion,  .accrdn {
+	display: flex;
+}
+.accordion .accrdn {
+	background: white;
+}
 .accordion .title {
 	border: 1px solid black;
 	border-right: none;
