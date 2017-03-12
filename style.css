@@ -88,7 +88,6 @@ h2 {
   background: #eee;
   box-shadow: 0 0 5px black;
 }
-
 .content p {
   font-size: 1.5em;
   width: 65%;
@@ -97,7 +96,6 @@ h2 {
 .button {
   cursor: pointer;
 }
-
 .button:before {
   content: '\f0c9';
   font: 42px fontawesome;
@@ -128,7 +126,6 @@ a:hover.readme {
   border-bottom: 1px solid #222;
   background: #2a2a2a;
 }
-
 .title a:first-of-type {
   line-height: 3em;
   padding: 0 1em;
@@ -143,7 +140,9 @@ a:hover.readme {
   color: #eee;
   border-bottom: 1px solid #222;
 }
-
+.nav li a:hover {
+  background: #444;
+}
 .nav li a:before {
   font: 1em fontawesome;
   position: absolute;
@@ -151,11 +150,6 @@ a:hover.readme {
   left: 1em;
   content: '\f009';
 }
-
-.nav li a:hover {
-  background: #444;
-}
-
 .nav li a.active {
   box-shadow: inset 5px 0 0 goldenrod, inset 6px 0 0 #222;
   background: #444;
